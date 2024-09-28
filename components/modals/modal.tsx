@@ -9,14 +9,14 @@ import {
     DialogTitle
 } from "@/components/ui/dialog"
 import { Button } from "../ui/button";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 interface ModalProps {
     title?: string;
     description?: string;
     currentStep?: number;
     totalSteps?: number; 
-    isOpen? : boolean;
+    isOpen?: boolean;
     onClose?: () => void;
     onSubmit?: () => void;
     body?: React.ReactElement;
@@ -42,21 +42,13 @@ export const Modal: React.FC<ModalProps> = ({
     secondaryActionLabel,
 }): React.JSX.Element | null => {
     
-    const [showModal, setShowModal] = useState(isOpen);
-
-    useEffect(() => {
-        setShowModal(isOpen);
-    }, [isOpen]);
-
     if (!isOpen) {
         return null;
     }
 
-
     return (
         <Dialog open={isOpen} onOpenChange={onClose}>
             <DialogContent className="overflow-hidden">
-
                 <DialogHeader>
                     <DialogTitle>
                         {title}
@@ -74,7 +66,8 @@ export const Modal: React.FC<ModalProps> = ({
                     {secondaryActionLabel && (
                         <Button 
                             className="w-full"
-                            variant={'outline'} onClick={secondaryAction}
+                            variant={'outline'} 
+                            onClick={secondaryAction}
                             disabled={disabled}
                         >
                             {secondaryActionLabel}
