@@ -7,7 +7,7 @@ import { Grip, Plus, Trash, Trash2 } from 'lucide-react';
 // import { Card, CardContent, CardHeader } from './ui/card';
 import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 import { VariantCard } from './home/variant-card';
-import { useModal } from '@/hooks/use-modal-store';
+// import { useModal } from '@/hooks/use-modal-store';
 // import { Label } from './ui/label';
 import { StateCard } from './home/state-card';
 

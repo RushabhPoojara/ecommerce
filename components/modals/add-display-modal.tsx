@@ -5,7 +5,7 @@ import { useCallback } from 'react';
 import { Modal } from './modal';
 import useTableStore from '@/hooks/use-table-store';
 import Image from 'next/image';
-import { Input } from '../ui/input';
+// import { Input } from '../ui/input';
 import { ImageIcon } from 'lucide-react';
 import { Button } from '../ui/button';
 
@@ -66,7 +66,7 @@ export const AddDisplayModal = () => {
               </div>
               <h1 className='font-semibold text-xl z-[99]'>Select a Design to Link</h1>
             </div>
-            <Input placeholder='Search Designs' className='w-[40%]' />
+            <input placeholder='Search Designs' className='w-[40%]' />
           </div>
           <div className='w-full grid grid-cols-2 md:grid-cols-4 gap-4 max-h-[40vh] overflow-hidden overflow-y-scroll'>
             {images.map((image, index) => (
