@@ -18,7 +18,7 @@ export const Navbar = (): React.JSX.Element => {
                 </Label>
             </div>
             <Button
-                onClick={() => onOpen('addDisplayModal')}
+                onClick={() => onOpen('addDisplayModal', '', '')}
             >
                 Publish Feed
             </Button>
