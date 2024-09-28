@@ -4,11 +4,11 @@ import useTableStore from '@/hooks/use-table-store';
 import React, { useState } from 'react';
 import { Button } from './ui/button';
 import { Grip, Plus, Trash, Trash2 } from 'lucide-react';
-import { Card, CardContent, CardHeader } from './ui/card';
+// import { Card, CardContent, CardHeader } from './ui/card';
 import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 import { VariantCard } from './home/variant-card';
 import { useModal } from '@/hooks/use-modal-store';
-import { Label } from './ui/label';
+// import { Label } from './ui/label';
 import { StateCard } from './home/state-card';
 
 export const Table: React.FC = () => {
@@ -30,7 +30,7 @@ export const Table: React.FC = () => {
     addState(stateName, []);
   };
 
-  const { onOpen } = useModal();
+  // const { onOpen } = useModal();
   
 
   const handleAddVariant = () => {
